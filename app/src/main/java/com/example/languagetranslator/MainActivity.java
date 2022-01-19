@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 
@@ -83,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 
@@ -172,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainActivity.this,"Fails to Downlaod Lang Model "+ e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Fails to Download Lang Model "+ e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -213,7 +211,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default:
                 languageCode=0;
-
         }
         return languageCode;
     }
